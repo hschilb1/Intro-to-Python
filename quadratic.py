@@ -11,9 +11,9 @@ def quadratic(a,b,c):
         print('No Real Number Solution')
         
     
-    a = int(input('please enter a number:')
-    b = int(input('please enter a number:')
-    c = int(input('please enter a number:') 
+    a = int(input('please enter a number:'))
+    b = int(input('please enter a number:'))
+    c = int(input('please enter a number:')) 
     print('results are:')
     print(quadratic(a,b,c))
     
