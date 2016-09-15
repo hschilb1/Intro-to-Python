@@ -1,21 +1,19 @@
-'''
-This is not a function.
-A function should begin with:
+import math 
 
-def quadratic_equation(a, b, c):
-    ...
+def quadratic(a,b,c):
+    a = b**2-4*a*c #calculate the discriminant
     
-'''
-
-import cmath
-
-a=float(input('Enter a: '))
-b=float(input('Enter b: '))
-c=float(input('Enter c: '))
-
-d = (b**2) - (4*a*c)
-
-sol1 = (-b-cmath.sqrt(d))/(2*a)
-sol2 = (-b+cmath.sqrt(d))/(2*a)
-
-print ('The solutions are {0} and {1}' .format (sol1,sol2))
+    if a>=0: #equation has solutions
+        x1 = ((-b + math.sqrt(a))/2*a)
+        x2 = ((-b - math.sqrt(a))/2*a)
+        return x1,x2
+    else:
+        print('No Real Number Solution')
+        
+    
+    a = int(input('please enter a number:')
+    b = int(input('please enter a number:')
+    c = int(input('please enter a number:') 
+    print('results are:')
+    print(quadratic(a,b,c))
+    
