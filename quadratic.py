@@ -1,3 +1,12 @@
+'''
+This is not a function.
+A function should begin with:
+
+def quadratic_equation(a, b, c):
+    ...
+    
+'''
+
 import cmath
 
 a=float(input('Enter a: '))
