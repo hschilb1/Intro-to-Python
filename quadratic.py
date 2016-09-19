@@ -1,19 +1,18 @@
-import math 
+from math import sqrt
 
-def quadratic(a,b,c):
-    a = b**2-4*a*c #calculate the discriminant
-    
-    if a>=0: #equation has solutions
-        x1 = ((-b + math.sqrt(a))/2*a)
-        x2 = ((-b - math.sqrt(a))/2*a)
-        return x1,x2
+def quad(num):
+    if type(num) == int or type(num) == float:
+        if num >= 0:
+            return num
+        else:
+            return -num
     else:
-        print('No Real Number Solution')
-        
-    
-    a = int(input('please enter a number:'))
-    b = int(input('please enter a number:'))
-    c = int(input('please enter a number:')) 
-    print('results are:')
-    print(quadratic(a,b,c))
-    
+        print('invalid value')
+
+def quadratic(a, b, c):
+    try:
+        x1 = (-b + (sqrt(b**2 - 4*a*c))) / (2*a)
+        x2 = (-b - (sqrt(b**2 - 4*a*c))) / (2*a)
+        return x1, x2
+    except ValueError:
+        print('These values will not work')
